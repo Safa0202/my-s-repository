@@ -132,5 +132,5 @@ setInterval(function () {
     }
   }
 
-  customElements.define('com-sap-sample-echarts-ring_kpi', SampleRingKpi)
+  customElements.define('com.sap.sac.sample.echarts.sankey', SampleRingKpi)
 })()
