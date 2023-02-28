@@ -488,7 +488,7 @@
     }
 
   }
-  customElements.define("com-ifm-hack-stories", IFMStories);
+  customElements.define("com-ifm-hack-stories2", IFMStories);
 
 
   function initSAC(e) {
