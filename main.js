@@ -1009,6 +1009,11 @@
   }
 
   function convertSACArtifact() {
+    saveAs pressed: ()=>{
+const t = this.getSaveAppUtils();
+t.instance.save(t.SAVE_AS)
+}
+,
 
     // if (sap.fpa) {
     //   console.log(sap.fpa.story);
