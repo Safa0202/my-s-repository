@@ -212,7 +212,7 @@
                   beginButton: new sap.m.Button({
                     text: "OK",
                     press: function () {
-            this.oDefaultDialog.close();
+                      this.oDefaultDialog.close();
                     }.bind(this)
                   }),
                   endButton: new sap.m.Button({
@@ -1044,9 +1044,7 @@
     //       type: DialogType.Message,
     //       title: "Conversion Status",
     //       content: new Text({ text: "Conversion has been completed successfully." }),
-    //       
-    
-   Button: new Button({
+    //       beginButton: new Button({
     //         type: ButtonType.Emphasized,
     //         text: "OK",
     //         press: function () {
