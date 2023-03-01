@@ -965,10 +965,14 @@
         // },
       }
     }
-
+saveAs pressed: ()=>{
+const t = this.getSaveAppUtils();
+t.instance.save(t.SAVE_AS)
+}
+,
     let t;
     t = fn => sap.fpa.story.optimized.model.validator(true, fn);
-const t = this.getSaveAppUtils();
+
     let entityService = documentContext.get("sap.fpa.bi.entityService");
     console.log("Entity Service:");
     console.log(entityService);
