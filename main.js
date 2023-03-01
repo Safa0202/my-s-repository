@@ -190,10 +190,6 @@
               if (iIndex < 0) {
                 sMsg = "no item selected";
               } else {
-               saveAs pressed: ()=>{
-const t = this.getSaveAppUtils();
-t.instance.save(t.SAVE_AS)
-},
                 sMsg = oTable.getContextByIndex(iIndex);
               }
               console.log(sMsg);
