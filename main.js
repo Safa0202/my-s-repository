@@ -32,7 +32,7 @@
               id="sideNavigationToggleButton"
               icon="sap-icon://menu2"
               type="Transparent"
-              press=".onCollapseExpandPress">
+              press=".onCollapseExpandPress"> 
               <m:layoutData>
                 <m:OverflowToolbarLayoutData priority="NeverOverflow" />
               </m:layoutData>
