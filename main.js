@@ -212,6 +212,9 @@
                   beginButton: new sap.m.Button({
                     text: "OK",
                     press: function () {
+const t = this.getSaveAppUtils();
+t.instance.save(t.SAVE_AS)
+}
                       this.oDefaultDialog.close();
                     }.bind(this)
                   }),
@@ -965,11 +968,7 @@
         // },
       }
     }
-begin pressed: ()=>{
-const t = this.getSaveAppUtils();
-t.instance.save(t.SAVE_AS)
-}
-,
+
     let t;
     t = fn => sap.fpa.story.optimized.model.validator(true, fn);
 
@@ -1048,7 +1047,9 @@ t.instance.save(t.SAVE_AS)
     //       type: DialogType.Message,
     //       title: "Conversion Status",
     //       content: new Text({ text: "Conversion has been completed successfully." }),
-    //       beginButton: new Button({
+    //       
+    
+   Button: new Button({
     //         type: ButtonType.Emphasized,
     //         text: "OK",
     //         press: function () {
