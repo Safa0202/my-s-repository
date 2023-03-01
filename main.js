@@ -1079,30 +1079,4 @@
   }
 
 })();
- convertOptimizedDesignMode: function() {
-                    var e = this;
-                    if (!this._bConvertToODMInProgress) {
-                        this._bConvertToODMInProgress = !0;
-                        this.oStoryContainer.showConvertToOptimizedDesignModeDialog((function(t) {
-                            var n = {
-                                skipCheckUnsupportedFeatures: !0,
-                                isConvertingToOptimizedDesignMode: !0,
-                                callback: function(t) {
-                                    if (delete e._bConvertToODMInProgress,
-                                    t) {
-                                        var n = e.getStoryModel()
-                                          , o = O.from(e.getStoryId())
-                                          , r = sap.fpa.ui.infra.common.getContext().getSemanticObject();
-                                        i(669).ShellNavigationService.toExternal({
-                                            target: {
-                                                semanticObject: r
-                                            },
-                                            params: {
-                                                resourceId: o.name,
-                                                pageId: n.getCurrentPageId(),
-                                                mode: "edit"
-                                            }
-                                        })
-                                    }
-                                }
-                            },
+ 
