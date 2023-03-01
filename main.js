@@ -212,8 +212,7 @@
                   beginButton: new sap.m.Button({
                     text: "OK",
                     press: function () {
-             this.getSaveAppUtils();
-
+            this.oDefaultDialog.close();
                     }.bind(this)
                   }),
                   endButton: new sap.m.Button({
