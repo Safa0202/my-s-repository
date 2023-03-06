@@ -321,6 +321,7 @@
                     icon: "sap-icon://begin",
                     press: function (oEvent) {
                       // TODO: call conversion for selected table entries
+                      this._fnConvertOptimizedDesignMode = this.convertOptimizedDesignMode.bind(this);
                       if (oEvent.getParameter("selectedItem").getKey() === "All") {
                         MessageToast.show(oEvent.getParameter("selectedItem").getKey());
                         return;
