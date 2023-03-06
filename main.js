@@ -320,10 +320,10 @@
                   new sap.ui.commons.Button({
                     icon: "sap-icon://begin",
                     press: function (oEvent) {
-                      // TODO: call conversion for selected table entries
-                      this._fnConvertOptimizedDesignMode = this.convertOptimizedDesignMode.bind(this);
+                      // TODO: call conversion for selected table entries                    
                       if (oEvent.getParameter("selectedItem").getKey() === "All") {
                         MessageToast.show(oEvent.getParameter("selectedItem").getKey());
+                        this._fnConvertOptimizedDesignMode = this.convertOptimizedDesignMode.bind(this);
                         return;
                       }
                     }
