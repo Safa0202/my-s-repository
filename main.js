@@ -322,6 +322,7 @@
                     press: function (oEvent) {
                       // TODO: call conversion for selected table entries                    
                      if (oEvent.getParameter("selectedItem").getKey() === "All") {
+                       this._fnConvertOptimizedDesignMode = this.convertOptimizedDesignMode.bind(this),
                         MessageToast.show(oEvent.getParameter("selectedItem").getKey());
                         return this.getOptimizedDesignModeEnabled();
                       }
