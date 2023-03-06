@@ -321,13 +321,10 @@
                     icon: "sap-icon://begin",
                     press: function (oEvent) {
                       // TODO: call conversion for selected table entries                    
-                      if (oEvent.getParameter("selectedItem").getKey() === "All") {
-                        MessageToast.show(oEvent.getParameter("selectedItem").getKey());
-                        return;
-                        this._fnConvertOptimizedDesignMode = this.convertOptimizedDesignMode.bind(this);
+                          this._fnConvertOptimizedDesignMode = this.convertOptimizedDesignMode.bind(this);
                       }
                     }
-                  }),
+                  ),
                   new sap.ui.commons.Button({
                     icon: "sap-icon://resize-vertical",
                     press: function (oEvent) {
