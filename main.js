@@ -323,8 +323,8 @@
                       // TODO: call conversion for selected table entries                    
                       if (oEvent.getParameter("selectedItem").getKey() === "All") {
                         MessageToast.show(oEvent.getParameter("selectedItem").getKey());
-                        this._fnConvertOptimizedDesignMode = this.convertOptimizedDesignMode.bind(this);
                         return;
+                        this._fnConvertOptimizedDesignMode = this.convertOptimizedDesignMode.bind(this);
                       }
                     }
                   }),
