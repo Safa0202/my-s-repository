@@ -1,0 +1,33 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.prepared3",
+  "version": "1.0.0",
+  "name": "ECharts Prepared3",
+  "newInstancePrefix": "EChartPrepared3",
+  "description": "A sample custom widget wrapped EChart Prepared3",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts-prepared3",
+      "url": "https://safa0202.github.io/my-s-repository/Tree_main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 600
+		},
+		"height": {
+			"type": "integer",
+			"default": 420
+		}
+  },
+  "methods": {
+  },
+  "events": {
+  }
+}
