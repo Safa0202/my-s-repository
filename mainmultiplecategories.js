@@ -149,5 +149,5 @@ const option = {
     }
   }
 
-  customElements.define('com-sap-sample-echarts-prepared', SamplePrepared)
+  customElements.define('com-sap-sample-echarts-prepared-mc', SamplePrepared)
 })()
