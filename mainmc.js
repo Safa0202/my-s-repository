@@ -79,7 +79,7 @@ $.get(ROOT_PATH + '/data/asset/data/flare.json', function (data) {
     })
   );
 });
-      myChart.setOption(option)
+      myChart.setOption(option);
     }
   }
 
