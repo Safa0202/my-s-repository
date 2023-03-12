@@ -33,7 +33,7 @@ var getScriptPromisify = (src) => {
         async render() {
             await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
-            const myChart = echarts.init(this._root)
+            const xChart = echarts.init(this._root)
             // Generate data.
 function makeData() {
   let data = [];
@@ -145,7 +145,7 @@ const option = {
     }
   ]
 };
-                myChart.setOption(option);
+                xChart.setOption(option);
             }, 200);
 
             // end paste
