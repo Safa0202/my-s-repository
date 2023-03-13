@@ -41,7 +41,7 @@ $.get(ROOT_PATH + '/data/asset/data/flare.json', function (data) {
     index % 2 === 0 && (datum.collapsed = true);
   });
   myChart.setOption(
-    (const option = {
+    ( option = {
       tooltip: {
         trigger: 'item',
         triggerOn: 'mousemove'
