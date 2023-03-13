@@ -35,7 +35,7 @@ var getScriptPromisify = (src) => {
 
       const myChart = echarts.init(this._root)
       myChart.showLoading();
-$.get(ROOT_PATH + '/data/asset/data/flare.json', function (data) {
+$.get('/data/asset/data/flare.json', function (data) {
 myChart.hideLoading();
 
 data.children.forEach(function (datum, index) {
