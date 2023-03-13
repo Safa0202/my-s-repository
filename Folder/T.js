@@ -95,7 +95,6 @@ setTimeout(function() {
 }
 , 2000);
 });
-      myChart.setOption(option)
     }
   }
 
