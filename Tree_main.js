@@ -33,7 +33,7 @@ var getScriptPromisify = (src) => {
     async render () {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
-      const chart = echarts.init(this._root)
+      const myChart = echarts.init(this._root)
       myChart.showLoading();
 $.get(ROOT_PATH + '/data/asset/data/flare.json', function (data) {
   myChart.hideLoading();
@@ -79,7 +79,7 @@ $.get(ROOT_PATH + '/data/asset/data/flare.json', function (data) {
     })
   );
 });
-      chart.setOption(option)
+      myChart.setOption(option)
     }
   }
 
