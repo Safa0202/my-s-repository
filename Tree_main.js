@@ -35,13 +35,13 @@ var getScriptPromisify = (src) => {
 
       const chart = echarts.init(this._root)
      myChart.showLoading();
-$.get(ROOT_PATH + '/data/asset/data/flare.json', function (data) {
+$.get('https://raw.githubusercontent.com/apache/echarts-examples/gh-pages/public/data/asset/data/flare.json', function (data) {
   myChart.hideLoading();
   data.children.forEach(function (datum, index) {
     index % 2 === 0 && (datum.collapsed = true);
   });
   myChart.setOption(
-    (const option = {
+    (var option = {
       tooltip: {
         trigger: 'item',
         triggerOn: 'mousemove'
