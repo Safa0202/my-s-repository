@@ -35,7 +35,7 @@ var getScriptPromisify = (src) => {
 
       const chart = echarts.init(this._root)
       $.get('https://echarts.apache.org/examples/data/asset/data/life-expectancy-table.json',function (_rawData) {
-		   _rawData = JSON.parse(_rawData);
+		
     run(_rawData);
   }
 );
