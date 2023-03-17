@@ -54,9 +54,7 @@ set myDataSource(dataBinding) {
 
             const chart = echarts.init(this._root)
             chart.showLoading();
-            $.get('https://raw.githubusercontent.com/apache/echarts-examples/gh-pages/public/data/asset/data/flare.json', function (data) {
             
-            data = JSON.parse(data);
             chart.hideLoading();
                 data.children.forEach(function (datum, index) {
                     index % 2 === 0 && (datum.collapsed = true);
