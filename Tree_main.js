@@ -96,7 +96,7 @@ set myDataSource(dataBinding) {
                         ]
                     }
               chart.setOption(option)
-            });
+           
         }
     }
     customElements.define('com-sap-sample-echarts-prepared3', SamplePrepared)
