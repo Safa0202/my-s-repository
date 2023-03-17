@@ -51,6 +51,7 @@ set myDataSource(dataBinding) {
           value: data[measure].raw,
         };
       });
+            console.log(data);
 
             const chart = echarts.init(this._root)
             chart.showLoading();
