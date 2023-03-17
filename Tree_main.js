@@ -56,9 +56,7 @@ set myDataSource(dataBinding) {
             chart.showLoading();
             
             chart.hideLoading();
-                data.children.forEach(function (datum, index) {
-                    index % 2 === 0 && (datum.collapsed = true);
-                });
+               
                 const option = {
                         tooltip: {
                             trigger: 'item',
