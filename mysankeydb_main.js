@@ -124,4 +124,4 @@ var getScriptPromisify = (src) => {
   }
 
   customElements.define("com-sap-sample-echarts-demo", SamplePrepped);
-})();
+});
