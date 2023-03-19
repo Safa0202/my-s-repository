@@ -12,7 +12,7 @@ var getScriptPromisify = (src) => {
         <div id="root" style="width: 100%; height: 100%;">
         </div>
       `;
-  class NestedPieSamplePrepped extends HTMLElement {
+  class SamplePrepped extends HTMLElement {
     constructor() {
       super();
 
