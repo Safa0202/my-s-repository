@@ -124,7 +124,7 @@ var getScriptPromisify = (src) => {
                 }]
             }
             chart.setOption(option)
-console.log(data);
+
         }
     }
     customElements.define('com-sap-sample-echarts-prepared3', SamplePrepared)
