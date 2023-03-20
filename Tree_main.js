@@ -53,7 +53,7 @@ var getScriptPromisify = (src) => {
                     value: data[measure].raw,
                 };
             });
-
+            console.log(data);
             const result = data.reduce((accumulator, currentValue) => {
                 const categoryIndex = accumulator.children.findIndex(item => item.name === currentValue.category);
                 const value = parseInt(currentValue.value);
