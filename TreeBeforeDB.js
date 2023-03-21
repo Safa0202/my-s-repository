@@ -32,18 +32,9 @@ var getScriptPromisify = (src) => {
             this.render()
         }
         
-set myDataSource(dataBinding) {
-      this._myDataSource = dataBinding;
-      this.render();
-    }
+
         async render() {
             await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js');
-
-      if (!this._myDataSource || this._myDataSource.state !== "success") {
-        return;
-      }
-
-  
 
             const chart = echarts.init(this._root)
             chart.showLoading();
