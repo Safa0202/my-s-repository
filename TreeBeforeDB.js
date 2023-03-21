@@ -85,5 +85,5 @@ var getScriptPromisify = (src) => {
             });
         }
     }
-    customElements.define('com-sap-sample-echarts-prepared3', SamplePrepared)
-})()
+    customElements.define('com-sap-sample-echarts-prepared3', SamplePrepared);
+})();
