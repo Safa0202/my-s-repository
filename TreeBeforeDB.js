@@ -31,21 +31,19 @@ var getScriptPromisify = (src) => {
         onCustomWidgetResize(width, height) {
             this.render()
         }
-        
 
         async render() {
-            await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js');
+            await getScriptPromisify('https: //cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
             const chart = echarts.init(this._root)
             chart.showLoading();
-            $.get('https://raw.githubusercontent.com/apache/echarts-examples/gh-pages/public/data/asset/data/flare.json', function (data) {
-            
-            data = JSON.parse(data);
-            chart.hideLoading();
+            $.get('https: //raw.githubusercontent.com/apache/echarts-examples/gh-pages/public/data/asset/data/flare.json', function (data) {
+                chart.hideLoading();
                 data.children.forEach(function (datum, index) {
                     index % 2 === 0 && (datum.collapsed = true);
                 });
-                const option = {
+                chart.setOption(
+                    (option = {
                         tooltip: {
                             trigger: 'item',
                             triggerOn: 'mousemove'
@@ -53,7 +51,8 @@ var getScriptPromisify = (src) => {
                         series: [
                             {
                                 type: 'tree',
-                                data: [data],
+                                data: [data
+                                ],
                                 top: '1%',
                                 left: '7%',
                                 bottom: '1%',
@@ -80,10 +79,11 @@ var getScriptPromisify = (src) => {
                                 animationDurationUpdate: 750
                             }
                         ]
-                    }
-              chart.setOption(option)
+                    })
+                );
             });
+            chart.setOption(option)
         }
     }
-    customElements.define('com-sap-sample-echarts-prepared3', SamplePrepared);
-})();
+    customElements.define('com-sap-sample-echarts-prepared', SamplePrepared)
+})()
