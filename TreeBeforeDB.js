@@ -37,7 +37,7 @@ var getScriptPromisify = (src) => {
 
             const chart = echarts.init(this._root)
             chart.showLoading();
-            $.get('https: //raw.githubusercontent.com/apache/echarts-examples/gh-pages/public/data/asset/data/flare.json', function (data) {
+            $.get('https://echarts.apache.org/examples//data/asset/data/flare.json', function (data) {
                 chart.hideLoading();
                 data.children.forEach(function (datum, index) {
                     index % 2 === 0 && (datum.collapsed = true);
