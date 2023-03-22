@@ -29,7 +29,7 @@ var getScriptPromisify = (src) => {
         async render() {
 			await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 			 const chart = echarts.init(this._root)
-            chart.showLoading();
+            
 			$.get('https://raw.githubusercontent.com/apache/echarts-examples/gh-pages/public/data/asset/data/flare.json', function (data) {
 				 data = JSON.parse(data);
 				  chart.hideLoading();
